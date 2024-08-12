@@ -1,12 +1,19 @@
 <h1>VPC Networking Basics</h1>
 
 <h2>Description</h2>
-The purpose of this project is to show how to build a basic virtual private cloud (VPC) in AWS. The architecture of this VPC models a three-tiered web application structure -- containing 2 availability zones (AZ), three subnets per AZ, an internet gateway and a NAT gateway.
+The purpose of this project is to demonstrate how to build a basic virtual private cloud (VPC) in AWS, connecting it to an existing VPC and troubleshooting issues. 
+<br />
+<br/>
+The architecture of this VPC models a three-tiered web application structure -- containing 2 availability zones (AZ), three subnets per AZ, an internet gateway and a NAT gateway.
 <br />
 <br />
-Note: This project is based on the AWS Skillbuilder lab, Amazon VPC Networking Basics. Lab steps were followed on my personal AWS account and all screenshots are original.
+Note: This project is based on the AWS Skillbuilder lab, Amazon VPC Networking Basics. Project steps were followed on my personal AWS account and all screenshots are original.
 <br />
-
+<br />
+<h2>Arhitecture Example</h2>
+<img src="https://i.imgur.com/WtDBGzl.png"/>
+<br />
+<br />
 
 <h2>AWS Services & Features Used</h2>
 
@@ -18,34 +25,39 @@ Note: This project is based on the AWS Skillbuilder lab, Amazon VPC Networking B
 - <b>NAT Gateway<b>
 
 <h2>Project walk-through:</h2>
-
+<br />
+<br />
 <p align="center">
 Create VPC: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/LGk3VVq.png"/>
 <br />
 <br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+ <img src="https://i.imgur.com/zGYuWKN.png"/>
+Launch EC2 Instance:  <br/>
+<img src="https://i.imgur.com/f5yhzhc.png"/>
 <br />
 <br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Testing Network Connectivity: <br/>
+<img src="https://i.imgur.com/AdGYKTv.png"/>
 <br />
 <br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Create a Transit Gateway:  <br/>
+<img src="https://i.imgur.com/WBtoD1g.png"/>
 <br />
 <br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Configure Attachments:  <br/>
+<img src="https://i.imgur.com/H0hR0yw.png"/>
 <br />
 <br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Configure Transit Gateway Routing:  <br/>
+<img src="https://i.imgur.com/H0hR0yw.png"/>
 <br />
 <br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/lB3pk5m.png"/>
+ <br />
+ <br />
+Retest connectivity between EC2 in VPC#1 & VPC#2:  <br/>
+<img src="https://i.imgur.com/pETjSxV.png"/>
 </p>
 
 <!--

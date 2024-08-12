@@ -21,7 +21,7 @@ Note: This project is based on the AWS Skillbuilder lab, Amazon VPC Networking B
 
 <p align="center">
 Create VPC: <br/>
-<img src="[https://i.imgur.com/62TgaWL.png](https://imgur.com/LGk3VVq)" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 Select the disk:  <br/>
